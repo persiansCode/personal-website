@@ -1,0 +1,27 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite"
+    },
+    "devDependencies": {
+        "@tailwindcss/vite": "^4.1.3",
+        "autoprefixer": "^10.4.21",
+        "axios": "^1.8.4",
+        "concurrently": "^9.0.1",
+        "daisyui": "^5.0.51",
+        "laravel-vite-plugin": "^1.2.0",
+        "postcss": "^8.5.3",
+        "tailwindcss": "^4.1.4",
+        "vite": "^6.2.4"
+    },
+    "dependencies": {
+        "@majidh1/jalalidatepicker": "^0.9.11",
+        "chart.js": "^4.5.0",
+        "highcharts": "^12.3.0",
+        "jquery": "^3.7.1",
+        "select2": "^4.1.0-rc.0",
+        "typewriter-effect": "^2.21.0"
+    }
+}

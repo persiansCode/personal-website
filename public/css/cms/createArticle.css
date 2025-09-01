@@ -1,0 +1,18 @@
+#select2 > span > span > span {
+ display: flex;
+ justify-content:right ;
+}
+.createArticleTitle::after{
+ content: " ";
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ left: 0;
+ display: block;
+ height: 10px;
+ width: calc(100% + 6px);
+ background-color: #1eb35b40;
+ -webkit-clip-path: polygon(6px 0, 100% 0, 100% 100%, 0 100%);
+ clip-path: polygon(6px 0, 100% 0, 100% 100%, 0 100%);
+ z-index: 5;
+}

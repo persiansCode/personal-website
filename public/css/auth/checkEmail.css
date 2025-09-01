@@ -1,0 +1,15 @@
+#rightSection{
+       grid-column-start : 7;
+       padding-top: 0;
+}
+
+@media only screen and (max-width : 768px){
+
+    #rightSection{
+        column-span: 10;
+       padding-top: 30px;
+
+     grid-column-start : 5;
+}
+    
+}

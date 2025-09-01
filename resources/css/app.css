@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@source "../views";
+@import 'select2/dist/css/select2.min.css';
+@custom-variant dark (&:where(.dark, .dark *));
+@font-face {
+    font-family: 'YourCustomFont';
+    src: url('./Vazir-light.ttf') ;
+         /* url('/fonts/YourCustomFont.woff') format('woff'); */
+
+  }
+
+  * {
+    font-family: 'YourCustomFont', sans-serif; /* Use your custom font */
+  }
+
+/* @source "../views/livewire/header.blade.blade.php";
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php'; */
+/* @source '..*.blade.php'; */
+/* @source '..*.js'; */
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+
+            --color-raisin-black: #161925;
+            --color-light-raisin-black: #2d3143;
+            --color-light-black: #3c4158;
+            
+            --color-delft-blue : #23395B;
+            --color-ucla-blue : #406E8E;
+            --color-powder-blue : #8ea8c3;
+            --color-mint-green :  rgba(203, 247, 237 , 1);
+            --color-celeste : #AAF5E3;
+            --color-platinum : #E0E0E0;
+            --color-sage : #AAAE8E;
+            --color-battle-gray : #828E82;
+            --color-salte-gray : #607B7D;
+            --color-payne-gray : #3A606E;
+
+
+
+}

@@ -1,0 +1,31 @@
+   #chart {
+       grid-column-start: 3;
+   }
+
+   #recentActivity {
+       grid-column-end: 13;
+   }
+
+   #table {
+       grid-column-start: 3;
+   }
+
+#topSectionContainer{
+    grid-column-start: 3;
+}
+   @media only screen and (max-width : 768px) {
+       #chart {
+           grid-column-start: 1;
+       }
+
+       #recentActivity {
+           grid-column-start: 1;
+       }
+
+       #table {
+           grid-column-start: 1;
+       }
+   #topSectionContainer{
+    grid-column-start: 1;
+}
+   }

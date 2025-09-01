@@ -1,0 +1,45 @@
+<div class=" backdrop-blur-[10px]  bg-cover z-[200] text-amber-300 rounded-b-sm fixed top-0 flex items-center w-full justify-between
+ py-6 px-3 max-h-18 border-b-slate-400 border-b-[0.8px] ">
+  <label class="toggle text-base-content">
+    <input type="checkbox" checked class="" id="checkbox" wire:click="$js.checkbox" />
+    {!! file_get_contents(public_path('files/sun.svg')) !!}
+    {!! file_get_contents(public_path('files/moon.svg')) !!}
+
+
+
+
+
+  </label>
+
+  <div class="flex gap-3" dir="rtl">
+
+    <img src="{{ asset('files/profile.jpg')}}" alt="" class="w-[50px] h-[50px] rounded-full object-cover">
+    <div class="">
+      <p>محمدرضا میرزایی</p>
+      <p>برنامه نویس لاراول</p>
+    </div>
+  </div>
+
+</div>
+
+@script
+<script>
+  let element = document.getElementById("body")
+  let checkbox = document.getElementById("checkbox")
+
+  if (checkbox.checked) {
+    element.classList.replace('light', 'dark')
+  }
+
+  $js('checkbox', () => {
+
+    if (checkbox.checked) {
+      element.classList.replace('light', 'dark')
+    }
+    else {
+      element.classList.replace('dark', 'light')
+    }
+  })
+
+</script>
+@endscript

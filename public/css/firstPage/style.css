@@ -1,0 +1,35 @@
+/* کلاس اصلی برای عکس */
+.ink-blob-image {
+ display: block;
+ max-height: 400px;
+
+ max-width: 400px;
+ object-fit: cover;
+ border: 3px solid #fff; /* حاشیه سفید */
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+ animation: blob-animation 8s infinite alternate ease-in-out;
+ filter: sepia(15%) brightness(105%) contrast(105%);
+ transition: all 0.3s;
+}
+.ink-blob-image-advanced:hover {
+ filter: sepia(30%) brightness(110%) contrast(110%);
+ transform: scale(1.02);
+}
+/* انیمیشن لکه‌مانند */
+@keyframes blob-animation {
+ 0%, 100% {
+   border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+ }
+ 20% {
+   border-radius: 43% 57% 31% 69% / 52% 29% 71% 48%;
+ }
+ 40% {
+   border-radius: 37% 63% 56% 44% / 49% 56% 44% 51%;
+ }
+ 60% {
+   border-radius: 23% 77% 19% 81% / 74% 64% 36% 26%;
+ }
+ 80% {
+   border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+ }
+}
