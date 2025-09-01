@@ -15,7 +15,7 @@ class FirstPage extends Component
 
     public function render()
     {
-     dd(Permission::first()->roles());
+    
  
         return view('livewire.first-page' )->layout('components.layouts.app', [
             'title' => $this->title,
