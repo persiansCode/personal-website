@@ -1,0 +1,18 @@
+{
+ "workbench.colorCustomizations": {
+  "activityBar.background": "#59083F",
+  "titleBar.activeBackground": "#7D0C58",
+  "titleBar.activeForeground": "#FFFBFE"
+ },
+
+    "files.associations": {
+      "*.blade.php": "html"
+    },
+    "tailwindCSS.includeLanguages": {
+      "html": "html",
+      "*.blade.php": "html"
+    },
+    "tailwindCSS.experimental.configFile": "./tailwind.config.js"
+  
+
+}
