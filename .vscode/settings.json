@@ -12,7 +12,8 @@
       "html": "html",
       "*.blade.php": "html"
     },
-    "tailwindCSS.experimental.configFile": "./tailwind.config.js"
+    "tailwindCSS.experimental.configFile": "./tailwind.config.js",
+    "php.version": "8.5"
   
 
 }
