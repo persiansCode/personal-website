@@ -2,21 +2,27 @@
 
 namespace App\Livewire\Cms\Article;
 use  App\Http\Requests\CreateArticleRequest ;
+use App\Models\ArticleCategory;
 use Illuminate\Http\Request;
 use App\Models\Article;
+use Illuminate\Support\Facades\Gate;
 use Livewire\Component;
 use Morilog\Jalali\Jalalian;
 use Livewire\WithFileUploads;
 use App\Http\Image\ImageService;
 use Illuminate\Support\Facades\Validator;
+use Post;
 class CreateArticle extends Component
 {
     use WithFileUploads;
     public $title = '';
- 
+    public $category_id = '';
+
+ public string $date = '';
     public $description = '';
-    public $arthor = '';
-    public $date = '';
+
+    public $status = '';
+
     public $tags ;
 
     public $photo;
@@ -24,32 +30,45 @@ class CreateArticle extends Component
     // {
     //     $this->tags = $value; // مقدار جدید تگ‌ها ذخیره می‌شود
     // }
-     protected $rules = [
+      protected $rules = [
+      "category_id" => "required|exists:article_categories,id",
       'date' => "required" ,
       'photo' => "mimes:jpg,bmp,png,gif,application/octet-stream|required",
-      'description' =>  'required|max:900|min:5|regex:/^[ا-یa-zA-Z0-9\-۰-۹ء-ي.,><\/;\n\r& ]+$/u',
+
+     'status' => 'required|integer|in:0,1',
+'description' => [
+    'required',
+
+    // 'regex:/^(?!.*<\s*\/?\s*script\s*>)([\p{Arabic}a-zA-Z0-9۰-۹\s\.,;:!?()"\'\-\/=&<>  ا-ی آ-ي ]|<\/?[a-zA-Z][^>]*>)*$/u'
+],
+
+
       "title" =>  'required|max:120|min:2|regex:/^[ا-یa-zA-Z0-9\-۰-۹ء-ي., ]+$/u',
-      "arthor" => 'required|min:1|max:100000000|regex:/^[0-9]+$/u',
+    
       'tags' => 'required|max:120|min:2'
     ];
-  public function submit(ImageService $imageService , Request $request)
-    {
+  
+  public function submit(ImageService $imageService )
+    { 
+      $this->validate();
+
         
-        $this->validate();
-        
+    
+ 
         [$shamsiDate, $time] = explode(' ', $this->date);
 [$year, $month, $day] = explode('/', $shamsiDate);
 [$hour, $minute, $second] = explode(':', $time);
+   $imageService->setExclusiveDirectory("article-image") ; 
+     $image =   $imageService->createIndexAndSave($this->photo);
 
 // تبدیل تاریخ شمسی به میلادی با `Jalalian`
 $miladiDateTime = (new Jalalian($year, $month, $day, $hour, $minute, $second))->toCarbon()->format('Y-m-d H:i:s');
-   $imageService->setExclusiveDirectory("article-image") ; 
-     $image =   $imageService->createIndexAndSave($this->photo);
- 
+
        $newArticle =   Article::create(
-            ['title' => $this->title, 'description' => $this->description ,'date' => $miladiDateTime ,
-             'arthor' => $this->arthor , "image" => $image['indexArray'], 'tags' => is_array($this->tags) ? implode(',', $this->tags) : $this->tags]
+            [  'status' => $this->status, 'arthor_id' => auth()->user()->id ,'title' => $this->title,'category_id' => $this->category_id, 'description' => $this->description ,'date' => $miladiDateTime ,
+            "image" => $image, 'tags' => is_array($this->tags) ? implode(',', $this->tags) : $this->tags]
         );
+  return redirect()->route('show-articles');
   }
     public function save(ImageService $imageService , Request $request)
     {
@@ -78,7 +97,9 @@ $miladiDateTime = (new Jalalian($year, $month, $day, $hour, $minute, $second))->
 
     public function render()
     {
-      
-        return view('livewire.cms.article.create-article')->layout("components.layouts.cms" , ['title' => "پنل مدیریت"]);;
+     
+     $categories = ArticleCategory::all()->select(['id' , 'name'])->toArray();
+ 
+        return view('livewire.cms.article.create-article' , compact('categories'))->layout("components.layouts.cms" , ['title' => "پنل مدیریت"]);;
     }
 }

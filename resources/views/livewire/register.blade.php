@@ -25,7 +25,7 @@
   @error("first_name")
             <p class="my-2 text-red-400">{{ $message  }}</p>
            @enderror
-        <x-auth.register.smallInput name="last_name" description="لطفا نام خانوادگی  خود را وارد نمایید" title="نام خانوادگی"/>
+        <x-auth.register.smallInput name="last_name" description="لطفا فامیلی خود را وارد نمایید" title="نام خانوادگی"/>
            
             @error("last_name")
             <p class="my-2 text-red-400">{{ $message  }}</p>
@@ -45,13 +45,13 @@
            @enderror
 
 
-            <button type="submit" class="bg-[#D2F159] w-full rounded-md text-black p-2">ثبت نام کنید</button>
-            <div class="bg-[#222222] py-3 my-4 rounded-md flex gap-3 justify-center items-center">
+             <button class="dark:bg-[#D2F159] bg-[#d9a1a1]  w-full rounded-md  text-slate-600 dark:text-black p-2">ثبت نام کنید</button>
+            <div class="bg-[#d9c5a1] dark:bg-[#222222] py-3 my-6 rounded-md flex gap-3 justify-center items-center">
             <img src="{{ asset('files/google.svg') }}" />
-            <p class="text-sm"> با گوگل وارد شوید </p>
+            <p class="text-slate-600 dark:text-white text-sm  "> با گوگل وارد شوید </p>
             </div>
               <div class="w-full p-4 justify-center flex">
-                <div class="flex gap-3"><p>اکانتی ندارید؟</p> <p class="text-[#D2F159]">همین الان ثبت نام کنید</p></div>
+           <div class="flex gap-3"><p class="text-slate-600 dark:text-white">اکانتی ندارید؟</p> <p class= "text-[#098742] dark:text-[#D2F159]">همین الان ثبت نام کنید</p></div>
             </div>
     </form>
    </div>

@@ -7,12 +7,14 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "cviebrock/eloquent-sluggable": "^12.0",
         "intervention/image": "^3.11",
         "intervention/image-laravel": "^1.5",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
         "livewire/livewire": "^3.6",
         "morilog/jalali": "3.*",
+        "mrezanomani/livewire-jalali-datepicker": "^1.0",
         "sweetalert2/laravel": "^1.0"
     },
     "require-dev": {

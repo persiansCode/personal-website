@@ -12,13 +12,13 @@
         <img src="{{ asset("files/logo.svg") }}" class="rounded-md m-auto  " alt="">
       
         </div>
-        <p>  محمدرضا میرزایی </p>
+        <p class="text-black dark:text-white">  محمدرضا میرزایی </p>
 
         
     </div>
     <div class="pb-8">
-        <p class="text-xl" > رمز عبور خود را وارد کنید </p>
-        <p class="text-sm py-3">  لحظاتی پیش برایتان کد تاییدی را ارسال کردیم ان را وارد نموده و وارد سیستم شوید </p>
+        <p class="text-xl text-black dark:text-white" > رمز عبور خود را وارد کنید </p>
+        <p class="text-sm py-3 text-black dark:text-white">  لحظاتی پیش برایتان کد تاییدی را ارسال کردیم ان را وارد نموده و وارد سیستم شوید </p>
     </div>
     <form wire:submit="save">
    
@@ -29,7 +29,7 @@
             type="text"
             maxlength="1"
             id="{{$index}}"
-            class="w-14 h-14 text-center text-[#D2F159] border border-[#888888]  rounded"
+            class="w-14 h-14 text-center text-slate-800 dark:text-[#D2F159] border border-[#888888]  rounded"
             wire:model.lazy="codes.{{ $index }}"
             oninput="moveFocus(event ,  this, {{ $index }})"
             onkeydown="handleBackspace(event, {{ $index }})"
@@ -46,8 +46,8 @@
             <button class="bg-[#D2F159] w-full rounded-md text-black p-3">  اعتبار سنجی کد </button>
            
             <div class="w-full p-4 justify-center flex">
-                <a href="http://localhost:8000/login">
-                <div class="flex gap-3"><p> بازگشت به صفحه ورود </p></div></a>
+                <a href="https://mohammadrezamirzaei.liara.run/login">
+                <div class="flex gap-3 text-black dark:text-white"><p> بازگشت به صفحه ورود </p></div></a>
             </div>
     </form>
    </div>

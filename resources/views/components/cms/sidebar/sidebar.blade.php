@@ -30,7 +30,7 @@ class="relative px-2 pt-18  z-[100]">
 
             
             <div class="flex items-center gap-3">
-                <div class="w-[35px] h-[35px] rounded-lg bg-powder-blue"></div>
+                <div class="w-[35px] h-[35px] rounded-lg bg-battle-gray dark:bg-powder-blue"></div>
                 <h2 class=" text-black dark:text-platinum">پنل مدیریت</h2>
             </div>
             <div class="" >
@@ -41,38 +41,39 @@ class="relative px-2 pt-18  z-[100]">
         <div class="absolute top-[80px] right-[10px] w-full pl-[20px]">
 
             <div
-                class=" p-2 my-2  hover:border-[.7px] hover:border-powder-blue rounded-md w-full flex items-center gap-2  ">
-                <div class="bg-sage dark:bg-[#262b45] p-2 rounded-md">
+                class=" p-2 my-2  border-[.7px] border-platinum  dark:border-powder-blue rounded-md w-full flex items-center gap-2  ">
+                <div class="bg-battle-gray dark:bg-[#262b45] p-2 rounded-md">
 
 
-                    <i class="fa text-powder-blue fa-newspaper-o mx-2 "></i>
+                    <i class="fa text-slate-300 dark:text-powder-blue fa-newspaper-o mx-2 "></i>
                 </div>
                 <p class=" text-black dark:text-platinum ">پست ها</p>
             </div>
             <div
-                class=" p-2 my-2  hover:border-[.7px] hover:border-powder-blue rounded-md w-full flex items-center gap-2  ">
-                <div class="bg-sage dark:bg-[#262b45] p-2 rounded-md">
+                class=" p-2 my-2  hover:border-[.7px] hover:border-platinum  dark:hover:border-powder-blue rounded-md w-full flex items-center gap-2  ">
+                <div class="bg-battle-gray dark:bg-[#262b45] p-2 rounded-md">
 
 
-                    <i class="fa text-powder-blue fa-newspaper-o mx-2 "></i>
+                    <i class="fa text-slate-300 dark:text-powder-blue fa-newspaper-o mx-2 "></i>
+                </div>
+                <p class=" text-black dark:text-platinum ">تماس با ما ها</p>
+            </div>
+         
+            <div
+                class=" p-2 my-2  hover:border-[.7px] hover:border-platinum  dark:hover:border-powder-blue rounded-md w-full flex items-center gap-2  ">
+                <div class="bg-battle-gray dark:bg-[#262b45] p-2 rounded-md">
+
+
+                    <i class="fa text-slate-300 dark:text-powder-blue fa-newspaper-o mx-2 "></i>
                 </div>
                 <p class=" text-black dark:text-platinum ">پست ها</p>
             </div>
             <div
-                class=" p-2 my-2  hover:border-[.7px] hover:border-powder-blue rounded-md w-full flex items-center gap-2  ">
-                <div class="bg-sage dark:bg-[#262b45] p-2 rounded-md">
+                class=" p-2 my-2  hover:border-[.7px] hover:border-platinum  dark:hover:border-powder-blue rounded-md w-full flex items-center gap-2  ">
+                <div class="bg-battle-gray dark:bg-[#262b45] p-2 rounded-md">
 
 
-                    <i class="fa text-powder-blue fa-newspaper-o mx-2 "></i>
-                </div>
-                <p class=" text-black dark:text-platinum ">پست ها</p>
-            </div>
-            <div
-                class=" p-2 my-2  hover:border-[.7px] hover:border-powder-blue rounded-md w-full flex items-center gap-2  ">
-                <div class="bg-sage dark:bg-[#262b45] p-2 rounded-md">
-
-
-                    <i class="fa text-powder-blue fa-newspaper-o mx-2 "></i>
+                    <i class="fa text-slate-300 dark:text-powder-blue fa-newspaper-o mx-2 "></i>
                 </div>
                 <p class=" text-black dark:text-platinum ">پست ها</p>
             </div>

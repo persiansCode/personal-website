@@ -17,11 +17,14 @@
         "vite": "^6.2.4"
     },
     "dependencies": {
-        "@majidh1/jalalidatepicker": "^0.9.11",
+        "@majidh1/jalalidatepicker": "^0.9.12",
         "chart.js": "^4.5.0",
         "highcharts": "^12.3.0",
         "jquery": "^3.7.1",
+        "persian-date": "^1.1.0",
+        "persian-datepicker": "^1.2.0",
         "select2": "^4.1.0-rc.0",
+        "tom-select": "^2.4.3",
         "typewriter-effect": "^2.21.0"
     }
 }

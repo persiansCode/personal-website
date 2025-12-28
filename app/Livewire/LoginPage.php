@@ -109,7 +109,7 @@ class LoginPage extends Component
                 }
             }
 
-            //    return redirect()->away("http://localhost:8000/enter-password/{$newOtp->token}") ;
+            //    return redirect()->away("https://mohammadrezamirzaei.liara.run/enter-password/{$newOtp->token}") ;
 
 
 

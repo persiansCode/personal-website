@@ -14,7 +14,7 @@
   <div class="flex gap-3" dir="rtl">
 
     <img src="{{ asset('files/profile.jpg')}}" alt="" class="w-[50px] h-[50px] rounded-full object-cover">
-    <div class="">
+    <div class="text-slate-800 dark:text-platinum">
       <p>محمدرضا میرزایی</p>
       <p>برنامه نویس لاراول</p>
     </div>

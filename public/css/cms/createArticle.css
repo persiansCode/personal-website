@@ -16,3 +16,26 @@
  clip-path: polygon(6px 0, 100% 0, 100% 100%, 0 100%);
  z-index: 5;
 }
+form{
+  padding-right: 15%;
+}
+.jdp-container {
+  background-color: #f9f9f9 !important; /* رنگ پس‌زمینه روشن */
+  color: #333 !important;      
+   bottom: 100% !important;  /* نمایش تقویم بالای input */
+  top: auto !important;
+  margin-bottom: 10px;         /* رنگ فونت تیره */
+}
+
+.jdp-container .jdp-time,
+.jdp-container .jdp-date {
+  color: #000 !important;              /* رنگ متن انتخاب زمان و تاریخ */
+}
+.jdp-time-container{
+  background-color: #f9f9f9 !important; /* رنگ پس‌زمینه روشن */
+  color: #333 !important;     
+}
+.custom-jdp {
+  background-color: #fff;
+  color: #000;
+}

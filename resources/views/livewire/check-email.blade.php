@@ -12,13 +12,13 @@
         <img src="{{ asset("files/logo.svg") }}" class="rounded-md m-auto  " alt="">
       
         </div>
-        <p>  محمدرضا میرزایی </p>
+        <p class="text-black dark:text-white">  محمدرضا میرزایی </p>
 
         
     </div>
     <div class="pb-8">
-        <p class="text-xl" > ایمیل خود را چک کنید </p>
-        <p class="text-sm py-3">  ما برایتان لینکی فرستادیم برای برگشت به اکانتتان  </p>
+        <p class="text-xl text-black dark:text-white" > ایمیل خود را چک کنید </p>
+        <p class="text-sm py-3 text-black dark:text-white">  ما برایتان لینکی فرستادیم برای برگشت به اکانتتان  </p>
     </div>
     <form action="">
    
@@ -28,7 +28,7 @@
             <button class="bg-[#D2F159] w-full rounded-md text-black p-3">  بصورتی دستی کد را وارد کنید  </button>
            
             <div class="w-full p-4 justify-center flex">
-                <div class="flex gap-3"><p> بازگشت به صفحه ورود </p></div>
+                <div class="flex gap-3 text-black dark:text-white"><p> بازگشت به صفحه ورود </p></div>
             </div>
     </form>
    </div>

@@ -10,17 +10,17 @@
    
    
    <div  class="  col-span-6  my-auto " id="rightSection">
-    <div class="flex gap-3 pb-5 w-full" id="logoContainer"  >
+    <div class="flex gap-3 pb-5 w-full items-center" id="logoContainer"  >
         <div class="max-w-[45px] max-h-[45px]">
         <img src="{{ asset("files/logo.svg") }}" class="rounded-md m-auto  " alt="">
       
         </div>
-        <p>  محمدرضا میرزایی </p>
+        <p class="text-slate-600 dark:text-white">  محمدرضا میرزایی </p>
 
         
     </div>
     <div class="pb-3">
-        <p class="text-sm" > به اکانت خود وارد شوید </p>
+        <p  class="text-slate-600 dark:text-white text-sm"> به اکانت خود وارد شوید </p>
     </div>
     <form wire:submit="save">
         <x-auth.register.input title="ادرس ایمیل یا شماره تلفن " name="input"  description="لطفا ادرس ایمیل یا شماره تلفن خود را وارد نمایید"/>
@@ -32,21 +32,21 @@
             <p class="my-2 text-red-400">{{ $message  }}</p>
            @enderror
 <div class="flex w-full justify-between pb-4">
-    <div class="flex gap-2 items-center">
-        <input type="checkbox" checked="checked" class="checkbox checkbox-success" />
+    <div class="flex gap-2 items-center text-slate-600 dark:text-white">
+        <input type="checkbox" checked="checked" class="checkbox checkbox-success " />
         برای 30 روز مرا به خاطر بسپارید
     </div>
-    <p class="text-[#D2F159] text-sm">رمز عبور خود را فراموش کرده اید؟</p>
+    <p class=" text-[#098742] dark:text-[#D2F159]  text-sm">رمز عبور خود را فراموش کرده اید؟</p>
 </div>
-            <button class="bg-[#D2F159] w-full rounded-md text-black p-2">ثبت نام کنید</button>
-            <div class="bg-[#222222] py-3 my-6 rounded-md flex gap-3 justify-center items-center">
+            <button class="dark:bg-[#D2F159] bg-[#d9a1a1]  w-full rounded-md  text-slate-600 dark:text-black p-2">ثبت نام کنید</button>
+            <div class="bg-[#d9c5a1] dark:bg-[#222222] py-3 my-6 rounded-md flex gap-3 justify-center items-center">
             <img src="{{ asset('files/google.svg') }}" />
-            <p class="text-sm "> با گوگل وارد شوید </p>
+            <p class="text-slate-600 dark:text-white text-sm  "> با گوگل وارد شوید </p>
             </div>
              
             <div class="w-full p-4 justify-center flex">
-                <a href="http://localhost:8000/register">
-                <div class="flex gap-3"><p>اکانتی ندارید؟</p> <p class="text-[#D2F159]">همین الان ثبت نام کنید</p></div>
+                <a href="http:///register">
+                <div class="flex gap-3"><p class="text-slate-600 dark:text-white">اکانتی ندارید؟</p> <p class= "text-[#098742] dark:text-[#D2F159]">همین الان ثبت نام کنید</p></div>
             </a>
             </div>
     </form>
