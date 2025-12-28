@@ -116,7 +116,7 @@ unset($__errorArgs, $__bag); ?>
             </div>
              
             <div class="w-full p-4 justify-center flex">
-                <a href="https://mohammadrezamirzaei.liara.run/register">
+                <a href="http:///register">
                 <div class="flex gap-3"><p class="text-slate-600 dark:text-white">اکانتی ندارید؟</p> <p class= "text-[#098742] dark:text-[#D2F159]">همین الان ثبت نام کنید</p></div>
             </a>
             </div>

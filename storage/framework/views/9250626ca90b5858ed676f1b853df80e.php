@@ -29,7 +29,7 @@
             type="text"
             maxlength="1"
             id="<?php echo e($index); ?>"
-            class="w-14 h-14 text-center text-[#D2F159] border border-[#888888]  rounded"
+            class="w-14 h-14 text-center text-slate-800 dark:text-[#D2F159] border border-[#888888]  rounded"
             wire:model.lazy="codes.<?php echo e($index); ?>"
             oninput="moveFocus(event ,  this, <?php echo e($index); ?>)"
             onkeydown="handleBackspace(event, <?php echo e($index); ?>)"

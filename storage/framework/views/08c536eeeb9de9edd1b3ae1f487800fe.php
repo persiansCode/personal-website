@@ -14,7 +14,7 @@
   ">
   <div class=" pt-[5rem]">
   <p class="text-slate-600 dark:text-white  ">من محمدرضا میرزایی هستم 19 ساله اصالتا و ساکن تبریز 2 سال تجربه کار کردن با ری اکت نکست جی اس لاراول و لایووایر رو دارم </p>
-  <button class="btn bg-platinum dark:bg-[#60b5ac] text-slate-600  dark:text-white border-none outline-none shadow-none mx-5 min-w-[90%] mt-[3rem]">دیدن کامل رزومه</button>
+  <a  href="https://mohammadrezamirzaei.liara.run/resume" class="btn bg-platinum dark:bg-[#60b5ac] text-slate-600  dark:text-white border-none outline-none shadow-none mx-5 min-w-[90%] mt-[3rem]">دیدن کامل رزومه</a>
   </div>
 
 </div>

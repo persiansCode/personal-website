@@ -16,13 +16,13 @@
 
       <div class="flex items-center gap-3 ">
       
-        <p class="text-black dark:text-celeste">صفحه اصلی</p>
-        <p class="text-black dark:text-celeste">مقاله ها</p>
+        <a href="https://mohammadrezamirzaei.liara.run/" class="text-black dark:text-celeste">صفحه اصلی</a>
+        <a href="https://mohammadrezamirzaei.liara.run/posts" class="text-black dark:text-celeste">مقاله ها</a>
 
-        <p class="text-black dark:text-celeste"> تماس  بامن</p>
+        <a href="https://mohammadrezamirzaei.liara.run/contact-with-us"  class="text-black dark:text-celeste"> تماس  بامن</a>
   <a href="https://mohammadrezamirzaei.liara.run/login" class=" bg-[#d9c5a1] dark:bg-[#60b5ac] text-white items-center gap-3 my-1 p-3 rounded-md flex">
     
-        <p class="text-sm"> ورود / ثبت نام </p>
+        <p class="text-sm" > ورود / ثبت نام </p>
 <i class='fa fa-sign-out ' style="font-size: 14px;" ></i>
         </a>
       </div>

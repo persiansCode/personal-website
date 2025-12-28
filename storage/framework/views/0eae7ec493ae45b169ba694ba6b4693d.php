@@ -62,13 +62,17 @@
             </div>
         </div>
     </div>
+  
     <div
     dir="rtl"
         class="col-span-12 grid grid-cols-12 col-start-2 gap-3 py-2 col-end-12 rounded-md p-2 px-5 border-[2.4px] border-powder-blue"
-    >
+    > 
+       <form class="w-full col-span-12" wire:submit="save" method="post">
       <div class="flex flex-col col-span-12 md:flex-row justify-center gap-3 items-center ">
 
-  
+
+
+ 
 
 <?php if (isset($component)) { $__componentOriginal9b0e63c1f6b5a553f9581ff194a8881f = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal9b0e63c1f6b5a553f9581ff194a8881f = $attributes; } ?>
@@ -170,14 +174,44 @@ unset($__errorArgs, $__bag); ?>
                     <textarea
                     placeholder=" متن پیغام ..."
                     type="text"
+                    name="mesaage"
                     class="w-full rounded-md p-1 placeholder-white border-0 text-sm bg-[#d9c5a1] dark:bg-[#222222]"
-                    
+                     wire:model.lazy="mesaage"
                     ></textarea>
+                           <?php $__errorArgs = ["mesaage"];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+            <p class="my-2 text-red-400"><?php echo e($message); ?></p>
+            <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
                 </div>
                 <div class="col-span-12">
 
-             <button class="dark:bg-[#D2F159] bg-[#d9a1a1]  w-full rounded-md  text-slate-600 dark:text-black p-2">ثبت نام کنید</button>
-</div>
+             <button type="submit" class="dark:bg-[#D2F159] bg-[#d9a1a1]  w-full rounded-md  text-slate-600 dark:text-black p-2">ارسال کنید</button>
+</div> </form>
     </div>
+      <script>
+    window.addEventListener('swal',function(e) {
+        let params = e.__livewire.params[0]
+        Swal.fire({
+            title:  params.title ,
+            icon: params.icon,
+            text:  params.text ,
+ 
+            timer: 3000,
+        confirmButtonText : params.confirmButtonText ? params.confirmButtonText : "",
+        showConfirmButton: params.confirmButtonText ? true : false,
+    }).then((result) => {
+        if (result.isConfirmed) {
+             window.location.href = "/";
+        }
+    })
+        console.log(e.__livewire.params[0].confirmButtonText)
+    });
+</script>
 </div>
 <?php /**PATH G:\programming\code\liara\resources\views\livewire\contact-with-us-page.blade.php ENDPATH**/ ?>

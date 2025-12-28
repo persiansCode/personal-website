@@ -39,7 +39,7 @@
             </tr>
         </thead>
         <tbody class="text-white">
-            <!--[if BLOCK]><![endif]--><?php $__currentLoopData = $items; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+            <?php $__currentLoopData = $items; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <tr class="p-2 m-2">
                         <td>
                         <p class="px-4">
@@ -85,7 +85,7 @@
 
                     </td>
                 </tr>
-            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><!--[if ENDBLOCK]><![endif]-->
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         
         </tbody>
     </table> 
@@ -94,4 +94,4 @@
 
        </div>
 </div>
-<?php /**PATH G:\programming\code\liara\resources\views/livewire/contact-with-us.blade.php ENDPATH**/ ?>
+<?php /**PATH G:\programming\code\liara\resources\views\livewire\contact-with-us.blade.php ENDPATH**/ ?>

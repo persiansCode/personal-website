@@ -56,7 +56,7 @@ class="relative px-2 pt-18  z-[100]">
 
                     <i class="fa text-slate-300 dark:text-powder-blue fa-newspaper-o mx-2 "></i>
                 </div>
-                <p class=" text-black dark:text-platinum ">پست ها</p>
+                <p class=" text-black dark:text-platinum ">تماس با ما ها</p>
             </div>
          
             <div
